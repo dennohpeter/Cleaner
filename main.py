@@ -5,7 +5,9 @@ import shutil
     Automatically Organizes files by moving them into their appropriate DIRECTORY
     Examples
     Moving all .mp4,webpm, .mkv into Either Videos Or Music Directory
+    Created by: twitter/github@dennohpeter, Computer Technology Student, Maseno University
 """
+
 EXT_IMAGES = ['.png', '.jpg', '.jpeg', '.bmp', '.svg']
 EXT_VIDEOS = ['.mp4', '.mkv', '.webm', '.mpeg', '.flv', '.m4a', '.f4v', '.f4a', '.m4b', '.m4r', '.f4b', '.mov', '.avi', '.wmv']
 EXT_AUDIOS = ['.mp3', '.wav', '.raw', '.wma']
