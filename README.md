@@ -4,6 +4,10 @@
 <pre>
  python main.py
 </pre>
+<h4>Demo Snippet</h4>
+<img src="https://user-images.githubusercontent.com/29105876/67164644-66a80c80-f385-11e9-94cb-2bcbb449f93e.gif" alt="preview"/>
+
+
 <h4>Contribution</h4>
 <span>You can request a feature by opening an issue :bug: or a Merge request :electric_plug: to add your feature to this project</span>
 <h4>Licence</h4>
