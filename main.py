@@ -65,16 +65,15 @@ for file in files:
         move(file,"Pictures")
         count += 1
     elif extension in EXT_VIDEOS:
-        print("Videos: {}{}".format(filename, extension))
         # st_size output is in bytes
         file_size_in_mbs = os.stat(file).st_size /1000000
         if file_size_in_mbs > 250:
             # it can be either a movie or mix
             print("---determining if the video is a movie or song---")
             filename = filename.lower()
-            if "mix" in filename or "ft" in filename or "song" in filename or "music" in filename or 'dj' in filename:
+            if "mix" in filename or "ft" in filename or "song" in filename or "music" in filename or 'dj' in filename or 'feat' in filename or 'official video' in filename:
                 # its a song mix, so moving it music dir
-                print("------It's a Song: %s moved to Music------" % file)
+                print("------It's a Song: %s moved to Music------" % filename)
                 move(file, "Music")
             else:
                 # its a movie, moving it to Videos dir
@@ -82,7 +81,7 @@ for file in files:
                 move(file, "Videos")
         else:
             # its a song when < 250
-            print("Song: %s" % file)
+            print("It's a Song: %s" % file)
             move(file, "Music")
         count += 1
     elif extension in EXT_AUDIOS:
